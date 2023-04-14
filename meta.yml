@@ -1,0 +1,14 @@
+name: Node Code
+description: |
+  This is a challenge to test your web development skills.
+
+  You need to first be able to login to access the real CTF. But don't worry, I have hidden a hint for you.
+
+  Once you are in, just follow the code. And soon you'll have your flag.
+
+value: 100
+category: Web
+flag: CTF_SDaT{1337hAckEr}
+
+# administrative
+container_name: node-code
