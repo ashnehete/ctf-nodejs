@@ -6,6 +6,16 @@ description: |
 
   Once you are in, just follow the code. And soon you'll have your flag.
 
+  $ ssh -L <local port>:node-code:8080 -p 56151 <username>@cs561.cs.umass.edu
+
+  This starts an SSH session with the SSH server on swarm machine, and this server is connected to the internal network. Now you can open a new terminal window on your machine, and connect to localhost:<local port> to access the challenge
+
+  For example, run
+
+  $ ssh -L localhost:8080:node-code:8080 -p 56151 user@cs561.cs.umass.edu
+
+  This will forward the local port 8080 on your machine to >:node-code:8080 on the swarm network, where this challenge is hosted. The SSH server has been configured to give very restricted shell access (change your password and add an SSH key to ~/.ssh/authorized_keys), but can be used as a tunnel. You can read more about the SSH client by running man ssh
+
 value: 100
 category: Web
 flag: CTF_SDaT{1337hAckEr}
